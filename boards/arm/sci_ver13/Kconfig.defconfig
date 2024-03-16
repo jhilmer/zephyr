@@ -1,0 +1,9 @@
+# Copyright (c) 2022, TOKITA Hiroshi <tokita.hiroshi@gmail.com>
+# SPDX-License-Identifier: Apache-2.0
+
+if BOARD_SCI_VER13
+
+config BOARD
+	default "sci_ver13"
+
+endif # BOARD_SCI_VER13

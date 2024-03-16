@@ -1,0 +1,26 @@
+/*
+ * Copyright (c) 2022, TOKITA Hiroshi <tokita.hiroshi@gmail.com>
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+#include <dt-bindings/pinctrl/gd32f303z(c-e-g-i-k)xx-pinctrl.h>
+
+&pinctrl {
+	usart0_default: usart0_default {
+		group1 {
+			pinmux = <USART0_RX_PA10_NORMP>, <USART0_TX_PA9_NORMP>;
+		};
+	};
+
+	usart1_default: usart1_default {
+		group1 {
+			pinmux = <USART1_RX_PA3_NORMP>, <USART1_TX_PA2_NORMP>, <USART1_RTS_PA1_NORMP>, <USART1_CTS_PA0_NORMP>;
+		};
+	};
+
+	pwm2_default: pwm2_default {
+		group1 {
+			pinmux = <TIMER2_CH1_PA7_OUT_NORMP>;
+		};
+	};
+};
