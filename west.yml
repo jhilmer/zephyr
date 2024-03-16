@@ -23,6 +23,8 @@ manifest:
       url-base: https://github.com/zephyrproject-rtos
     - name: babblesim
       url-base: https://github.com/BabbleSim
+    - name: jhilmer
+      url-base: https://github.com/jhilmer
 
   group-filter: [-babblesim, -optional]
 
@@ -163,7 +165,8 @@ manifest:
       groups:
         - hal
     - name: hal_gigadevice
-      revision: 2994b7dde8b0b0fa9b9c0ccb13474b6a486cddc3
+      remote: jhilmer
+      revision: 3134807f8dd5d639142a816c3ab8c1d9967dc7bc
       path: modules/hal/gigadevice
       groups:
         - hal
