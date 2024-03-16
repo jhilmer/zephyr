@@ -1,0 +1,10 @@
+# Copyright (c) 2021 YuLong Yao <feilongphone@gmail.com>
+# SPDX-License-Identifier: Apache-2.0
+
+choice
+	prompt "GigaDevice GD32F303 MCU Selection"
+	depends on SOC_SERIES_GD32F30X
+
+	config SOC_GD32F303
+		bool "gd32f303"
+endchoice
